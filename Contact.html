@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+a:link, a:visited {
+  background-color: DodgerBlue;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: red;
+}
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;} 
+
+input[type=text], input[type="tel"], input[type="date"], input[type="email"], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  width : 600px;
+  margin-left:auto;
+  margin-right:auto;
+}
+</style>
+</head>
+<body style="background-image: url('./content/Light-Blue-Backgrounds.jpg');background-size: 100% 100%;" >
+<table style="background-color:powderblue;font-family:verdana;" class="center" >
+  <tr>
+    <td style="width:200px"><a  style="width:200px" href="Index.html">Home</a></td>
+    <td style="width:200px"><a style="width:200px" href="About.html">About Me</a></td>
+    <td style="width:200px"><a style="width:200px" href="Music.html">Music</a></td>
+    <td style="width:200px"><a style="width:200px" href="Vedio.html">Vedio</a></td>
+    <td style="width:200px"><a style="width:200px" href="Contact.html">Contact Me</a></td>
+  </tr>
+  
+</table>
+
+<table class="center">
+	<tr>
+		<td>
+			<h1 >Hi, This is Contact page</h1>
+		</td>
+	</tr>
+</table>
+<div class="container">
+  <form  action="" style="background-size: 100% 100%;">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+   <label for="birthday">Birthday</label>
+    <input type="date" id="birthday" name="birthday" placeholder="Your birthday.." >
+    <label for="phone">Phone number</label>
+    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="subject">Messege </label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="checkbox" id="vehicle1" name="vehicle1" value="0" required>
+    <label for="vehicle1">Accept terms and conditions</label><br>
+<br>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+</body>
+</html>
